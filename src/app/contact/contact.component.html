@@ -52,7 +52,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let contact of contacts; let i = index">
-        <th *ngIf="!contact.editing" scope="row">{{contact.id}}</th>
+        <th  scope="row">{{contact.id}}</th>
         <td *ngIf="!contact.editing">{{contact.firstName}}</td>
         <td *ngIf="!contact.editing">{{contact.lastName}}</td>
         <td *ngIf="!contact.editing">{{contact.email}}</td>

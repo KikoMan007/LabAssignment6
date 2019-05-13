@@ -12,10 +12,12 @@ export class ContactComponent implements OnInit {
   contact: Array<Contact> = [];
 
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
-    this.contacts = [
+    this.contact = [
       {
         id: 1,
         firstName: 'Michael',
@@ -40,14 +42,12 @@ export class ContactComponent implements OnInit {
     ];
   }
 
-  addContact() {
-    this.contact.unshift(new Contact({}));
-
-  }
-
-
-
 
 }
+
+
+
+
+
 
 

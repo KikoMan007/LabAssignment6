@@ -5,7 +5,7 @@ interface IContact {
     lastName?: string;
     email?: string;
     phone?: string;
-    editing?: boolean;
+
 
 }
 
@@ -19,32 +19,19 @@ export class Contact {
     public lastName?: string;
     public email?: string;
     public phone?: string;
-    public editing?: boolean;
 
 
-    constructor(contact: IContact) {
-        contact.editing = this.setState();
 
-
-        Object.assign(this, contact);
+    constructor() {
 
     }
-    setState(contact: IContact) {
-
-        if(contact = null || Object.keys(contact).length == 0) {
-            return true;
 
 
-        }
 
-        let editing = false;
-        Object.keys(contact).forEach((key) => {
-            if (contact[key] == null) {
-                editing = true;
-            }
-        });
 
-        return editing;
-
-    }
 }
+
+
+
+
+
